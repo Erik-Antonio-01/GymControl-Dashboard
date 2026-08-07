@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(0deg, #141414, #3a3a3a);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* tela carregamento */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* esconder botao nativo de mostrar senha */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
