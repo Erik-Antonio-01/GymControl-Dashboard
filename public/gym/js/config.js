@@ -58,7 +58,8 @@ export function setApiBaseUrl(url) {
  * It is OFF by default so real and fictional data are never mixed silently.
  */
 export function isDemoMode() {
-  return read(STORAGE_KEYS.demoMode) === "true";
+  const isGitHubPages = window.location.hostname.endsWith(".github.io");
+  return isGitHubPages || read(STORAGE_KEYS.demoMode) === "true";
 }
 
 export function setDemoMode(enabled) {
