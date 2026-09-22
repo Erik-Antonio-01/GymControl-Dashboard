@@ -16,8 +16,8 @@ const STORAGE_KEYS = {
 };
 
 /** Where the login page lives, relative to the app shell. */
-export const LOGIN_PAGE = "/gym/login.html";
-export const APP_PAGE = "/gym/";
+export const LOGIN_PAGE = "./login.html";
+export const APP_PAGE = "./";
 
 /** Default address of the Sistema-de-Academia Express server. */
 export const DEFAULT_API_BASE_URL = "http://localhost:3000";
