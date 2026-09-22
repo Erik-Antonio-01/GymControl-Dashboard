@@ -1,0 +1,24 @@
+{
+  "name": "academia",
+  "version": "1.0.0",
+  "description": "API REST do GymControl (Sistema de Academia) — Express + MySQL",
+  "main": "src/application/app.js",
+  "scripts": {
+    "start": "node --env-file=.env src/application/app.js",
+    "dev": "nodemon --env-file=.env src/application/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.24.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
